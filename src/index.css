@@ -1,13 +1,14 @@
 *{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color:hwb(172 17% 23%);
+    background-color:hwb(0 32% 67%);
     color: white;
 }
 p{
     font-size: 20px;
 }
 h1{
-    color:rgb(14, 33, 51);
+    color:rgb(100, 171, 236);
+    text-decoration-line: underline;
 }
 section{
     padding: 15px;

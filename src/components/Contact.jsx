@@ -1,7 +1,7 @@
 function Contact(){
     return(
       
-     <section>
+     <section className="contact">
       <h1>Contact Me</h1>
       <p>
         I'm open to opportunities, internships, and software development roles.
@@ -10,6 +10,7 @@ function Contact(){
 
       <div className="contact-container">
         <div className="contact-info">
+          
           <h3>Let's Connect</h3>
 
           <p>

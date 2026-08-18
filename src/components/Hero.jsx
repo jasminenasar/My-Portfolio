@@ -3,13 +3,17 @@ import developerImage from "../assets/developer.png";
 function Hero(){
  return(
    <section className="hero">
-     <img src={developerImage} alt="Developer Illustration" />
+     <div className="hero-content">
      <h1>Hi,I'm Jasmine.</h1>
      <h2>Aspiring Frontend | Software Developer.</h2>
      <p>I build responsive and user-friendly web application.</p>
-     <a href="/Jasmine_Resume.pdf" download className="resume-btn">
+    
+     </div>
+     <img src={developerImage} alt="Developer Illustration" />
+      <a href="/Jasmine_Resume.pdf" download className="resume-btn">
       Download Resume
      </a>
+     
    </section>
  );
 }

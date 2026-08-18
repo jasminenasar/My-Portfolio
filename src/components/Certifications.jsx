@@ -1,27 +1,23 @@
 function Certifications(){
     return(
-       <section>
+       <section className="certifications"> 
           <h1>Certifications</h1>
-
-      <div>
-        <h3>C Programming</h3>
-        <p>Infosys Springboard</p>
-      </div>
-
-      <div>
-        <h3>Python for Data Science</h3>
-        <p>NPTEL</p>
-      </div>
-
-      <div>
-        <h3>Frontend Development Internship</h3>
-        <p>Cognifyz Technologies</p>
-      </div>
-
-      <div>
-        <h3>Web Development Training</h3>
-        <p>Zaalima Development Pvt. Ltd.</p>
-      </div>
+      <table>
+     <tr>
+      <th>C Programming</th>
+      <th>Python for Data Science</th>
+      <th>Frontend Development Internship</th>
+      <th>Web Development Training</th>
+      </tr>
+      
+      <tr>
+        <td><a href=""  target="_blank" rel="noopener noreferrel">Infosys Springboard</a></td>
+        <td><a href=""  target="_blank" rel="noopener noreferrel">NPTEL</a></td>
+        <td><a href=""  target="_blank" rel="noopener noreferrel" >Cognifyz Technologies</a></td>
+        <td><a href="" target="_blank" rel="noopener noreferrel">Zaalima Development Pvt. Ltd.</a></td>
+       </tr> 
+    
+      </table>
        </section>
     );
 }

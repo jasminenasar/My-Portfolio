@@ -1,32 +1,141 @@
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgb(34, 30, 30);
+    
+   
+}
+nav h2{
+    font-size: 24px;
+    margin-left:-80px;
+    padding: 10px;
+    border-radius: 3px;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 25px;
+    border-radius: 3px;
+    
+}
+nav ul li{
+    cursor:pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav ul li:hover{
+    color:#ee0537;
+}
+.hero-content{
+    text-align: center;
+}
+.hero-content h1{
+    text-decoration: none;
+}
+.hero img{
+    width:600px;
+    display: block;
+    margin: 25px auto;
+     
+}
+.resume-btn{
+    background-color: rgb(8, 164, 184);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    display: block;
+    margin: 25px auto;
+    width: fit-content;
+}
+.about-container{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+   
+}
+.about-content ul{
+   line-height: 30px;
+   font-size: 18px;
+}
+.about-content h3{
+    color: #3498db;
+    border-bottom: 1px solid #898a8b;
+   
+}
+.about p{
+    line-height: 30px;
+    color: #fff;
+}
+.quick-info {
+    border: 1px solid rgb(100, 171, 236);
+    width:fit-content;
+    padding: 25px;
+    border-radius: 8px;
+    width: 350px;
+    flex-shrink: 0;
+   
+}
+.quick-info h3{
+    color: #e61b1b;
+    background-color:rgb(100, 171, 236);
+    padding: 10px;
+}
+.quick-info strong{
+    color: #d4f51a;
+}
+
+.quick-info ul{
+    padding: 10px;
+    line-height: 60px;
+}
+
+
 .skills{
     text-align: center;
+    border-bottom: 1px solid #8a8787;
+    
     
 }
 .skills h1{
     margin-bottom: 30px;
+   padding-top: 30px;
+    background: none;
+    border-top: 1px solid #8a8787;
+   
 }
 .skill-container{
     display:flex;
     gap:25px;
     overflow-x: auto;
-    padding:20px;
+    padding:20px 30px;
     scroll-behavior: smooth;
+    background: none;
+   
+    width: fit-content;
+    border-radius: 7px;
+    margin: 0 auto;
 }
 .skill{
-    min-width: 130px;
-    padding:25px 15px;
+    min-width: 50px;
+    padding: 15px;
     border-radius:15px;
-    background: #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: rgb(47, 47, 48);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
     transition: transform 0.3s ease,box-shadow 0.3s ease;
+   
 }
 .skill:hover{
     transform: scale(1.15);
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 .skill i{
-    font-size: 55px;
+    font-size: 35px;
     margin-bottom: 15px;
     display: block;
     background: none;
@@ -34,27 +143,31 @@
 .skill p{
     margin:0;
     font-weight: 600;
+    font-size: 12px;
     background: none;
-    color: black;
+    color:#c4bebe;
 }
 .experience{
-    padding:60px 8%;
+    padding:30px 8%;
     max-width: 1000px;
     margin: auto;
+    
 }
 .experience h1{
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
+    
 }
 .exp-card {
-    background: white;
+    background: rgb(41, 40, 40);
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 12px;
-    border-left: 5px solid #3498db;
+    border-left: 5px solid rgb(118, 171, 214);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
 }
 
 .exp-card:hover {
@@ -66,18 +179,18 @@
     margin-bottom: 8px;
     font-size: 21px;
    
-
 }
 
 
 .exp-card h4 {
     margin: 20px 0;
     font-size: 16px;
-    color: rgb(40, 128, 128);
+    color: rgb(16, 137, 236);
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
-    background-color: rgb(158, 158, 161);
+    /*background-color: rgb(24, 179, 101);*/
+    text-decoration-line: underline;
     
 }
 
@@ -87,5 +200,136 @@
 }
 .exp-card h3,h4,p{
     background: none;
-    color: black;
+    color: rgb(250, 248, 248);
 }
+
+.projects h1{
+   border-top: 1px solid rgb(119, 117, 117);
+   padding: 30px 0;
+   text-align: center;
+}
+.project-card h2{
+    text-align:left;
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-decoration:underline;
+    color: #f53a82;
+   display: block;
+    
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+   
+
+}
+.project-card{
+    border: 1px solid rgb(68, 168, 235) ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    min-height: 330px;
+    overflow: auto;
+}
+.project-content{
+    width: 100%;
+    padding: 10px 0 20px 20px;
+   
+}
+.pro-img {
+    float: right;
+    width: 60%;
+    margin: 0 20px 15px 25px;
+    
+}
+.pro-img img{
+    width:100%;
+    max-width: 280px;
+    min-height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 40%;
+    
+    
+}
+.project-card button{
+    margin-right: 25px;
+    margin-top: 10px;
+    background-image:linear-gradient(to right, rgb(233, 22, 180) , rgb(114, 232, 236));
+    color: #0c0c0b;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+.project-content strong {
+    color: #dc1ee2;
+   
+}
+.project-content h3{
+    color: #969191;
+}
+.last-para{
+margin-top: 50px;
+margin-left: 120px;
+}
+.last-para i{
+    font-size: 20px;
+}
+p i{
+    font-size: 15px;
+    color: #b4b0b0;
+}
+table{
+    width: 100%;
+    margin-top: 30px;
+}
+
+table,th, td{
+    padding: 20px;
+    border: solid 1px rgb(240, 235, 235);
+    border-collapse: collapse;
+    
+}
+th{
+    text-align: left;
+    background-color: #f06524;
+    font-size: 18px;
+}
+td a{
+    color: #b6d310;
+}
+.contact{
+   text-align: center;
+  margin-top: 50px;
+}
+.contact h1, h3, p, strong,.contact, .contact div,.social-links a{
+    background-color: #3a3839;
+    padding: 5px;
+}
+.contact h3{
+    color: #5ab8f7;
+    text-decoration:underline;
+}
+.contact strong{
+    color: #141314;
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.social-links a{
+    color: #b6d310;
+}
+form{
+    background-color: #0c0c0b;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input{
+    background-color: black;
+    border: none;
+    margin-top: 20px;
+}
+
