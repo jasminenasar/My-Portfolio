@@ -5,7 +5,7 @@ function Experience(){
 
       <div className="exp-card">
         <h3>Frontend Development Intern</h3>
-        <h4>Cognifyz Technologies</h4>
+        <h4><a href="https://cognifyz.com/#google_vignette">Cognifyz Technologies</a></h4>
         <p>
           Developed responsive web interfaces using React, HTML, CSS,
           and JavaScript. Collaborated with a team using Git and GitHub.
@@ -14,7 +14,7 @@ function Experience(){
 
       <div className="exp-card">
         <h3>Web Development Trainee</h3>
-        <h4>Zaalima Development Pvt. Ltd.</h4>
+        <h4><a href="https://www.zaalima.in/">Zaalima Development Pvt. Ltd.</a></h4>
         <p>
           Gained hands-on experience in web development and MERN-stack
           fundamentals through guided projects.

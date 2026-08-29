@@ -19,7 +19,7 @@ function Projects(){
           <ul>
               <li>Add Student</li>
               <li>View Student</li>
-              <li>Search Stduent</li>
+              <li>Search Student</li>
               <li>Update Student</li>
               <li>Delete Student</li>
           </ul>
@@ -48,9 +48,8 @@ function Projects(){
           <ul>
               <li>Search Weather by city</li>
               <li>Display real-time weather information</li>
-              <li>Search Stduent</li>
-              <li>Update Student</li>
-              <li>Delete Student</li>
+              <li>Show temperature and weather conditions</li>
+              <li>Responsive design for different screen sizes</li>
               
           </ul>
            <a href="https://github.com/jasminenasar/weather-dashboard.git" target="_blank" rel="noopener noreferrer">Github</a>

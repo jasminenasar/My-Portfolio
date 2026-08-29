@@ -152,7 +152,7 @@ background-image: url("./assets/black-bg.png");
 }
 .quick-info {
     border: 1px solid rgb(100, 171, 236);
-    background-color:#eb3553;
+    background-color:#fa4362;
     width:fit-content;
     padding: 25px;
     border-radius: 8px;
@@ -174,10 +174,10 @@ background-image: url("./assets/black-bg.png");
 .quick-info ul{
     padding: 10px;
     line-height: 60px;
-    background-color:#eb3553;
+    background-color:#fa4362;
 }
 .quick-info ul li{
-    background-color:#eb3553;
+    background-color:#fa4362;
 }
 
 
@@ -285,14 +285,14 @@ background-image: url("./assets/black-bg.png");
    
 }
 
-.exp-card h4 {
+.exp-card h4 a{
     margin: 20px 0;
     font-size: 16px;
     color:#eb3553;
-    padding: 10px;
+    margin-left: 10px;
     border-radius: 5px;
     display: inline-block;
-    /*background-color: rgb(24, 179, 101);*/
+    background: none;
     text-decoration-line: underline;
     
 }
@@ -302,10 +302,7 @@ background-image: url("./assets/black-bg.png");
     margin: 0;
     margin-left: 8px;
     font-size: 16px;
-    
-   
-   
-    
+ 
 }
 .exp-card h3,h4,p{
     background: none;
@@ -315,17 +312,13 @@ background-image: url("./assets/black-bg.png");
 .projects{
    background-color: #494c4d;
     
-    
-    
 }
 .projects h1{
   
    padding: 10px 0 50px 0;
    text-align: center;
    background: none;
-  
-   
- 
+
 }
 .project-card h2{
     text-align:left;
@@ -458,7 +451,7 @@ table ,th,td{
 
 th{
     text-align: left;
-    background-color:#eb3553;
+    background-color:#fa4362;
     font-size: 18px;
 }
 td a{
@@ -682,9 +675,7 @@ form button{
     nav{
         position: relative;
         z-index: 1000;
-      
-       
-       
+        
     }
     nav ul{
         display: none;
@@ -692,10 +683,10 @@ form button{
         top: 100%;
         left: auto;
         right: 0;
-        width: 70%;
+        width: 60%;
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
+        padding: 10px;
         margin: 0;
         background: #535252;
         z-index: 1001;
@@ -712,7 +703,7 @@ form button{
     nav ul li{
         width: 100%;
         background: none;
-        margin: 10px 0;
+        margin: 5px 0;
         box-shadow: none;
         border: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -736,6 +727,7 @@ form button{
     .about p,.about ul{
       line-height: 1.8;
     }
+    
     .quick-info ul {
       width: fit-content;
       line-height: 55px;
@@ -800,6 +792,10 @@ form button{
         align-items: center;
         overflow: hidden;
        
+    }
+    .project-card i{
+        white-space: normal;
+       overflow-wrap: break-word;
     }
     .project-content ul li{
         padding: 5px;
