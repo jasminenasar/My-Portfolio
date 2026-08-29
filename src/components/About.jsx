@@ -1,9 +1,9 @@
 
 function About(){
     return(
-      <section className="about">
+      <section className="about" id="about">
         <h1>About Me</h1>
-        <p>I am passionate about building responsive and user-friendly web applications. Through internships and personal projects, I have developed practical skills in HTML, CSS, JavaScript, React, C, and Python. I enjoy solving problems, learning new technologies, and continuously improving my skills as I begin my career in software development.</p>
+        <p className="about-intro">I am passionate about building responsive and user-friendly web applications. Through internships and personal projects, I have developed practical skills in HTML, CSS, JavaScript, React, C, and Python. I enjoy solving problems, learning new technologies, and continuously improving my skills as I begin my career in software development.</p>
      <div className="about-container">
          <div className="quick-info">
            <h3>Quick Information</h3>

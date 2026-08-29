@@ -1,5 +1,6 @@
 import developerImage from "../assets/developer.png";
 
+
 function Hero(){
  return(
    <section className="hero">

@@ -2,7 +2,7 @@ import "devicon/devicon.min.css";
 
 function Skills(){
     return(
-      <section className="skills">
+      <section className="skills" id="skills">
         <h1>My skills</h1>
         <div className="skill-container"> 
           <div className="skill">

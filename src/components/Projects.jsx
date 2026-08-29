@@ -1,12 +1,13 @@
 import weatherImage from "../assets/weather-img.png";
 import kanbanImage from "../assets/kanban-img.png";
 import blossomImage from "../assets/blossom-img.png";
+import studentManagementImage from "../assets/Student-Management-img.png";
 
 
 
 function Projects(){
    return(
-     <section className="projects">
+     <section className="projects" id="projects">
         <h1>My Projects</h1>
         <div className="project-container">
         <div className="project-card">
@@ -23,20 +24,23 @@ function Projects(){
               <li>Delete Student</li>
           </ul>
 
-          <button>Github</button>
-          <button>Live Demo</button>
+          <a href="https://github.com/jasminenasar/Students-Records.git" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="https://youtu.be/7QNAWCBsw5A" target="_blank" rel="noopener noreferrer">Demo Vedio</a>
 
           </div>
           
           <div className="pro-img">
-          <img src={blossomImage} alt="blossom-page-image" />
+          <img src={studentManagementImage} alt="blossom-page-image" />
+      
           </div>
+          
          </div>
 
         
          <div className="project-card">
            <div className="project-content">
          <h2> 2.Weather Dashboard</h2>
+
          
           <p><strong>Technology:</strong><i>React,HTML,CSS,JavaScript,Weather API</i></p>
           <p>Developed a responsive weather dashboard that displays real-time weather information for different cities using a weather API.</p>
@@ -49,8 +53,8 @@ function Projects(){
               <li>Delete Student</li>
               
           </ul>
-           <button>Github</button>
-          <button>Live Demo</button>
+           <a href="https://github.com/jasminenasar/weather-dashboard.git" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="https://weatherworldinfo.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
 
           </div>
          
@@ -73,8 +77,8 @@ function Projects(){
                <li>Organize workflow</li>
                <li>Responsive design</li>
           </ul>
-           <button>Github</button>
-          <button>Live Demo</button>
+           <a href="https://github.com/jasminenasar/Kanban-Task-Manager.git" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="task-friend.netlify.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 
           </div>
          
@@ -102,8 +106,8 @@ function Projects(){
                <li>Image gallery</li>
                <li>Contact section</li>
           </ul>
-           <button>Github</button>
-          <button>Live Demo</button>
+           <a href="https://github.com/jasminenasar/Blossom-Henna-Website.git" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href=" https://jasminenasar.github.io/Blossom-Henna-Website/" target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
           <div className="pro-img">
            <img src={blossomImage} alt="blossom-page-image" />

@@ -1,7 +1,37 @@
+import {useRef} from "react";
+import emailjs from "@emailjs/browser";
+
 function Contact(){
+
+   const form = useRef();
+
+      const sendEmail = (e) =>{
+        e.preventDefault();
+
+        emailjs
+          .sendForm(
+            "service_zi55xsf",
+            "template_zwnm9je",
+            form.current,
+            {
+              publicKey:"k4lRODO1JK4HNNvFP",
+            }
+          )
+          .then(() =>{
+            alert("Message sent successfully!");
+            form.current.reset();
+          })
+          .catch((error)=>{
+            alert("Failed to send message.");
+            console.log(error);
+          });
+      };
+
     return(
+
+     
       
-     <section className="contact">
+     <section className="contact" id="contact">
       <h1>Contact Me</h1>
       <p>
         I'm open to opportunities, internships, and software development roles.
@@ -25,7 +55,9 @@ function Contact(){
             <strong>Location:</strong> Tamil Nadu, India
           </p>
 
-          <div className="social-links">
+         
+        </div>
+         <div className="social-links">
             <a href="https://github.com/jasminenasar" target="_blank" rel="noreferrer">
               GitHub
             </a>
@@ -33,17 +65,20 @@ function Contact(){
             <a href= "https://www.linkedin.com/in/jasminenasar/" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
+            
           </div>
-        </div>
-
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Your Message"></textarea>
+       
+        <form  ref={form} className="contact-form" onSubmit={sendEmail}>
+          <input type="text" name="user_name" placeholder="Your Name" required />
+          <input type="email" name="user_email" placeholder="Your Email" required/>
+          <input type="text" name="subject" placeholder="Subject" required/>
+          <textarea name="message" placeholder="Your Message" required></textarea>
 
           <button type="submit">Send Message</button>
         </form>
+
+        
+
        </div>
       </section>
     );
