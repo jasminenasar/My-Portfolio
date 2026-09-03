@@ -77,7 +77,7 @@ function Projects(){
                <li>Responsive design</li>
           </ul>
            <a href="https://github.com/jasminenasar/Kanban-Task-Manager.git" target="_blank" rel="noopener noreferrer">Github</a>
-          <a href="task-friend.netlify.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <a href="https://task-friend.netlify.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 
           </div>
          
